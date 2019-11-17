@@ -4,9 +4,9 @@
 
 # Team Members Information
 
-    1. Het Kansara
-    2. Kshitija Patel
-    3. Dhanpreet Singh
+    1. Het Kansara (N01330009)
+    2. Kshitija Patel (N01363715)
+    3. Dhanpreet Singh (N01403913)
 
 # How to configure the project?
 

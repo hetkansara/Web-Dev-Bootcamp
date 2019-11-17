@@ -1,0 +1,54 @@
+.login-container {
+    border:2px solid #cfd8dc;
+    display:flex;   
+}
+.banner {
+    width:100%;
+}
+.login-card {
+    background-color:white;
+    padding:0;
+}
+.login-card h2 {
+    margin: 0;
+    padding: 15px;
+    background-color: slategrey;
+    color: white;
+}
+.col {
+    padding:0;
+}
+.login-section{
+    margin: 15px;
+}
+.login-section h3{
+    border-bottom:2px solid #90a4ae;
+    padding-bottom: 10px;
+    color: #607d8b;
+}
+.login-section input{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+.input-item{
+    padding: 10px 0px 10px 0px;
+}
+.login-section input[type="submit"] {
+    background-color: slategrey;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+span[data-val-isvalid="False"] {
+    color: #f44336;
+}
+.navbar{
+    background-color: slategrey;
+    border:0;
+}
+.navbar-nav li a, .navbar-brand{
+    color: white !important;
+}
