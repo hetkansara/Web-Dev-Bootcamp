@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Student.aspx.cs" Inherits="Web_Dev_Bootcamp.Student" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add_Student.aspx.cs" Inherits="Web_Dev_Bootcamp.Add_Student" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Detail Info for Student ID:<span id="target_student_id" runat="server"></span></h2>
+    <h1>ADD STUDENT</h1>
+    <p>Please enter all "*" required fields.</p>
     <div runat="server">
 
         <div class="each_field">
@@ -26,4 +26,9 @@
         </div>
 
     </div>
+
+    <p>**Click SUBMIT to save.</p>
+    <asp:Button runat="server" Text="SUBMIT" />
+
+
 </asp:Content>

@@ -14,14 +14,14 @@ namespace Web_Dev_Bootcamp
         protected void Page_Load(object sender, EventArgs e)
         {
             bool valid = true;
-            string studentid = Request.QueryString["studentid"];
+            string studentid = Request.QueryString["target_student_id"];
             
             if (String.IsNullOrEmpty(studentid)) valid = false;
 
             //We will attempt to get the record we need
             if (valid)
             {
-                studentId.InnerHtml = studentid;
+                target_student_id.InnerHtml = studentid;
                 var db = new SCHOOLDB();
                 Dictionary<String, String> student_record = db.FindStudent(Int32.Parse(studentid));
 

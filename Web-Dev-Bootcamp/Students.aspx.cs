@@ -34,7 +34,7 @@ namespace Web_Dev_Bootcamp
                 string enrolmentdate = row["ENROLMENTDATE"];
                 students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
 
-                students_result.InnerHtml += "<td class='action-items'><a href='Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
+                students_result.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
 
                 students_result.InnerHtml += "</td></tr>";
             }

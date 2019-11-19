@@ -1,8 +1,7 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Student.aspx.cs" Inherits="Web_Dev_Bootcamp.Student" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Edit_Student.aspx.cs" Inherits="Web_Dev_Bootcamp.EditStudentInfo" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Detail Info for Student ID:<span id="target_student_id" runat="server"></span></h2>
+    <h2>Verify all details for Student ID :<span id="target_student_id" runat="server"></span></h2>
     <div runat="server">
 
         <div class="each_field">
@@ -26,4 +25,7 @@
         </div>
 
     </div>
+
+    <p>**Do Not Forget to Click SUBMIT to save all the changes made.</p>
+    <asp:Button runat="server" Text="SUBMIT" />
 </asp:Content>

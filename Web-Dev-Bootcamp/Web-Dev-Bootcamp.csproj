@@ -132,7 +132,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Add_Student.aspx" />
     <Content Include="Courses.aspx" />
+    <Content Include="Edit_Student.aspx" />
     <Content Include="Faculties.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -192,6 +194,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Student.aspx.cs">
+      <DependentUpon>Add_Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Student.aspx.designer.cs">
+      <DependentUpon>Add_Student.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Courses.aspx.cs">
       <DependentUpon>Courses.aspx</DependentUpon>
@@ -201,6 +210,13 @@
       <DependentUpon>Courses.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Edit_Student.aspx.cs">
+      <DependentUpon>Edit_Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Student.aspx.designer.cs">
+      <DependentUpon>Edit_Student.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Faculties.aspx.cs">
       <DependentUpon>Faculties.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

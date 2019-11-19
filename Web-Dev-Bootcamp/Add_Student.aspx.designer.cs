@@ -11,17 +11,8 @@ namespace Web_Dev_Bootcamp
 {
 
 
-    public partial class Student
+    public partial class Add_Student
     {
-
-        /// <summary>
-        /// target_student_id control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl target_student_id;
 
         /// <summary>
         /// student_fname control.

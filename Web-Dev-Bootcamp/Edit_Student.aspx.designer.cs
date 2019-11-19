@@ -11,7 +11,7 @@ namespace Web_Dev_Bootcamp
 {
 
 
-    public partial class Student
+    public partial class EditStudentInfo
     {
 
         /// <summary>
