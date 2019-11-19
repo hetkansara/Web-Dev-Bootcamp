@@ -69,3 +69,16 @@ E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\obj\Debug\Web-Dev-Bootcamp.csproj.Cor
 E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\obj\Debug\Web-Dev-Bootcamp.csproj.CopyComplete
 E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\obj\Debug\Web-Dev-Bootcamp.dll
 E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\obj\Debug\Web-Dev-Bootcamp.pdb
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\BouncyCastle.Crypto.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\Google.Protobuf.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\MySql.Data.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\Renci.SshNet.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\System.Net.Http.Formatting.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\System.Web.Http.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\System.Web.Http.WebHost.dll
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\Google.Protobuf.xml
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\MySql.Data.xml
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\Renci.SshNet.xml
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\System.Net.Http.Formatting.xml
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\System.Web.Http.xml
+E:\Study\Web-Dev-Bootcamp\Web-Dev-Bootcamp\bin\System.Web.Http.WebHost.xml

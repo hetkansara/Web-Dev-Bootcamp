@@ -15,6 +15,10 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link rel="stylesheet" type="text/css" href="/Content/style.css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <!-- Fonts downloaded from Google Fonts - https://fonts.google.com/  -->
+    <!-- Icons used from Font Awesome - https://fontawesome.com/  -->
+    <script src="https://kit.fontawesome.com/d71d3f27e2.js" crossorigin="anonymous"></script>
 
 </head>
 <body>

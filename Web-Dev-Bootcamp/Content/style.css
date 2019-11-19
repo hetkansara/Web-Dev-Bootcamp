@@ -52,3 +52,26 @@ span[data-val-isvalid="False"] {
 .navbar-nav li a, .navbar-brand{
     color: white !important;
 }
+.add-btn {
+    position: fixed;
+    background-color: slategrey;
+    padding: 10px;
+    border-radius: 70px;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    top: 90%;
+    left: 90%;
+    font-size: 20px;
+}
+.add-btn:hover {
+    color: #cfd8dc;
+}
+.action-items i {
+    padding: 0px 15px 0px 0px;
+}
+.action-items i:hover {
+    color: black;
+}
