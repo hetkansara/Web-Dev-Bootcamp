@@ -75,3 +75,8 @@ span[data-val-isvalid="False"] {
 .action-items i:hover {
     color: black;
 }
+
+.welcome_page{
+    text-align: center;
+    color:red;
+}

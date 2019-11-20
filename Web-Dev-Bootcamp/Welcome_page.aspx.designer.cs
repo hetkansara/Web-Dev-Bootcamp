@@ -11,34 +11,34 @@ namespace Web_Dev_Bootcamp
 {
 
 
-    public partial class login
+    public partial class WebForm1
     {
 
         /// <summary>
-        /// loginform control.
+        /// welcome_page control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm loginform;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl welcome_page;
 
         /// <summary>
-        /// user_email control.
+        /// login_id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_email;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl login_id;
 
         /// <summary>
-        /// user_password control.
+        /// login_as control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_password;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl login_as;
     }
 }

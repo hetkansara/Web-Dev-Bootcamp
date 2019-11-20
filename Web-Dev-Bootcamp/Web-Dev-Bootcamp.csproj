@@ -155,7 +155,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\style.css" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Welcome_page.aspx" />
     <Content Include="libman.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="login.aspx" />
@@ -271,12 +271,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Welcome_page.aspx.cs">
+      <DependentUpon>Welcome_page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Welcome_page.aspx.designer.cs">
+      <DependentUpon>Welcome_page.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
