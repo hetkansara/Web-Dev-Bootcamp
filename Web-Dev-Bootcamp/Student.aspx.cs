@@ -13,35 +13,29 @@ namespace Web_Dev_Bootcamp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            bool valid = true;
-            string studentid = Request.QueryString["target_student_id"];
+            string studentid = Request.QueryString["studentid"];
             
-            if (String.IsNullOrEmpty(studentid)) valid = false;
-
             //We will attempt to get the record we need
-            if (valid)
+            if (!String.IsNullOrEmpty(studentid))
             {
-                target_student_id.InnerHtml = studentid;
                 var db = new SCHOOLDB();
                 Dictionary<String, String> student_record = db.FindStudent(Int32.Parse(studentid));
 
                 if (student_record.Count > 0)
                 {
-                    // student_title_fname.InnerHtml = student_record["STUDENTFNAME"] + " " + student_record["STUDENTLNAME"];
-                    // student_fname.InnerHtml = student_record["STUDENTFNAME"];
-                    // student_lname.InnerHtml = student_record["STUDENTLNAME"];
-                    // student_number.InnerHtml = student_record["STUDENTNUMBER"];
-                    // enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
+                    pageTypeTitle.InnerHtml = "Edit ";
+                    student_fname.Value = student_record["STUDENTFNAME"];
+                    student_lname.Value = student_record["STUDENTLNAME"];
+                    student_id.Value = student_record["STUDENTNUMBER"];
+                    enrolment_date.Value = student_record["ENROLMENTDATE"];
                 }
                 else
                 {
-                    valid = false;
+                    //student.InnerHtml = "There was an error finding that student.";
                 }
-            }
-
-            if (!valid)
+            } else
             {
-                //student.InnerHtml = "There was an error finding that student.";
+                pageTypeTitle.InnerHtml = " Add ";
             }
         }
     }

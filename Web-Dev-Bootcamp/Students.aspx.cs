@@ -31,10 +31,29 @@ namespace Web_Dev_Bootcamp
                 string studentnumber = row["STUDENTNUMBER"];
                 students_result.InnerHtml += "<td>" + studentnumber + "</td>";
 
-                string enrolmentdate = row["ENROLMENTDATE"];
-                students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
+                DateTime enrolmentdate = Convert.ToDateTime(row["ENROLMENTDATE"]);
+                string dayOfMonth = "";
+                if(enrolmentdate.Day > 9)
+                {
+                    dayOfMonth = Convert.ToString(enrolmentdate.Day);
+                }
+                else
+                {
+                    dayOfMonth = "0" + Convert.ToString(enrolmentdate.Day);
+                }
+                string monthOfYear = "";
+                if (enrolmentdate.Month > 9)
+                {
+                    monthOfYear = Convert.ToString(enrolmentdate.Month);
+                }
+                else
+                {
+                    monthOfYear = "0" + Convert.ToString(enrolmentdate.Month);
+                }
 
-                students_result.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
+                students_result.InnerHtml += "<td>" + monthOfYear + "-" + dayOfMonth + "-" + enrolmentdate.Year + "</td>";
+
+                students_result.InnerHtml += "<td class='action-items'><a href='Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student' onclick='return confirm(\"Are you sure you want to delete student ["+studentnumber+" - "+studentfirstname+" "+studentlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
 
                 students_result.InnerHtml += "</td></tr>";
             }

@@ -80,3 +80,25 @@ span[data-val-isvalid="False"] {
     text-align: center;
     color:red;
 }
+.form-row div{
+    margin: 10px 0px 10px 0px;
+}
+.back-btn {
+    color: slategrey
+}
+footer p {
+    text-align: center;
+}
+.btn-primary {
+    background-color: slategrey;
+}
+.form-row .form-control {
+    max-width: none;
+}
+.container h1 {
+    border-bottom: 1px solid lightgrey;
+    color: slategrey;
+}
+td{
+    color: #616161;
+}

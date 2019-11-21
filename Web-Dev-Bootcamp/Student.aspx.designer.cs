@@ -7,22 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web_Dev_Bootcamp
-{
-
-
-    public partial class Student
-    {
-
+namespace Web_Dev_Bootcamp {
+    
+    
+    public partial class Student {
+        
         /// <summary>
-        /// target_student_id control.
+        /// pageTypeTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl target_student_id;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pageTypeTitle;
+        
         /// <summary>
         /// student_fname control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText student_fname;
-
+        
         /// <summary>
         /// student_lname control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText student_lname;
-
+        
         /// <summary>
         /// student_id control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText student_id;
-
+        
         /// <summary>
         /// enrolment_date control.
         /// </summary>

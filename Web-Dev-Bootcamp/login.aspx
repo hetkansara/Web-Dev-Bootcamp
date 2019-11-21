@@ -7,7 +7,7 @@
     <head runat="server">
         <title></title>
         <webopt:bundlereference runat="server" path="~/Content/css" />
-        <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+        <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
     </head>
 
     <body style="background-color:#eceff1;">
