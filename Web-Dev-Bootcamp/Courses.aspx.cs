@@ -17,7 +17,7 @@ namespace Web_Dev_Bootcamp
             if (!String.IsNullOrEmpty(classid))
             {
                 var db = new SCHOOLDB();
-                Dictionary<String, String> course_record = db.FindCourse(Int32.Parse(classid));
+                Dictionary<String, String> course_record = db.FindStudent(Int32.Parse(classid));
 
                 if (course_record.Count > 0)
                 {
