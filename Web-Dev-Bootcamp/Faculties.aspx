@@ -14,20 +14,17 @@
                     <label for="facultyfname">First Name</label>
                     <asp:TextBox runat="server" ID="facultyfname" class="form-control"  aria-describedby="facultyFname" placeholder="Enter firstname"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="facultyfname" ErrorMessage="enter faculty first name"></asp:RequiredFieldValidator>
-                    <small id="facultyFnameInfo" class="form-text text-muted">Enter faculty's firstname</small>
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="facultylname">Last Name</label>
                     <asp:TextBox runat="server" ID="facultylname" class="form-control"  aria-describedby="facultyLname" placeholder="Enter lastname"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="facultylname" ErrorMessage="enter faculty last name"></asp:RequiredFieldValidator>
-                     <small id="facultyLnameInfo" class="form-text text-muted">Enter faculty's lastname</small>
                   
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="facultyemployeenumber">Employee Number</label>
                     <asp:TextBox runat="server" ID="facultyemployeenumber" class="form-control"  aria-describedby="facultyEmployeeNumber" placeholder="Enter employee number"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="facultyemployeenumber" ErrorMessage="enter faculty employee number"></asp:RequiredFieldValidator>
-                    <small id="facultyEmployeeNumberInfo" class="form-text text-muted">Enter employee number</small>
                 </div>
             </div>
             <div class="form-row">
@@ -35,13 +32,11 @@
                     <label for="facultyhiredate">Hire Date</label>
                     <asp:TextBox runat="server" ID="facultyhiredate" class="form-control"  aria-describedby="facultyHireDate" placeholder="Enter hire date" TextMode="Date"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="facultyhiredate" ErrorMessage="enter faculty hire date"></asp:RequiredFieldValidator>
-                    <small id="facultyHireDateInfo" class="form-text text-muted">Select hire date</small>
                 </div>
                 <div class="col-md-6">
                     <label for="salary">Salary</label>
                     <asp:TextBox runat="server" ID="salary" class="form-control"  aria-describedby="Salary" placeholder="Enter salary"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="salary" ErrorMessage="enter faculty's salary"></asp:RequiredFieldValidator>
-                    <small id="Salary" class="form-text text-muted">Select hire date</small>
                 </div>
             </div>
             <div class="form-row">

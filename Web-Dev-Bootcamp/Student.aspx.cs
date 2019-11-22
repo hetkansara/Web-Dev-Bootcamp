@@ -28,7 +28,7 @@ namespace Web_Dev_Bootcamp
                     studentfname.Text = student_record["STUDENTFNAME"];
                     studentlname.Text = student_record["STUDENTLNAME"];
                     studentnumber.Text = student_record["STUDENTNUMBER"];
-                    enrollmentdate.Text = student_record["ENROLMENTDATE"];
+                    studentenrollmentdate.Text = student_record["ENROLMENTDATE"];
                 }
                 else
                 {
