@@ -13,6 +13,15 @@ namespace Web_Dev_Bootcamp {
     public partial class _Students {
         
         /// <summary>
+        /// searchText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox searchText;
+        
+        /// <summary>
         /// students_result control.
         /// </summary>
         /// <remarks>
@@ -20,5 +29,14 @@ namespace Web_Dev_Bootcamp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl students_result;
+        
+        /// <summary>
+        /// addStudentButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor addStudentButton;
     }
 }

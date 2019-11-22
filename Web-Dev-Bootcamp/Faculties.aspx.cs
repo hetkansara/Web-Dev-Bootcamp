@@ -17,12 +17,12 @@ namespace Web_Dev_Bootcamp
             if (!String.IsNullOrEmpty(facultyid))
             {
                 var db = new SCHOOLDB();
-                Dictionary<String, String> faculty_record = db.FindStudent(Int32.Parse(facultyid));
+                Dictionary<String, String> faculty_record = db.FindInTable(Int32.Parse(facultyid), "TEACHERS");
 
                 if (faculty_record.Count > 0)
                 {
                     pageTypeTitle.InnerHtml = "Edit ";
-                    facultyfname.Text = faculty_record["TEACHERTFNAME"];
+                    facultyfname.Text = faculty_record["TEACHERFNAME"];
                     facultylname.Text = faculty_record["TEACHERLNAME"];
                     employeenumber.Text = faculty_record["EMPLOYEENUMBER"];
                     hiredate.Text = faculty_record["HIREDATE"];

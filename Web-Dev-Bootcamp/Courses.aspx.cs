@@ -17,7 +17,7 @@ namespace Web_Dev_Bootcamp
             if (!String.IsNullOrEmpty(classid))
             {
                 var db = new SCHOOLDB();
-                Dictionary<String, String> course_record = db.FindStudent(Int32.Parse(classid));
+                Dictionary<String, String> course_record = db.FindInTable(Int32.Parse(classid), "CLASSES");
 
                 if (course_record.Count > 0)
                 {
@@ -25,7 +25,7 @@ namespace Web_Dev_Bootcamp
                     coursecode.Text = course_record["CLASSCODE"];
                     startdate.Text = course_record["STARTDATE"];
                     finishdate.Text = course_record["FINISHDATE"];
-                    coursename.Text = course_record["COURSENAME"];
+                    coursename.Text = course_record["CLASSNAME"];
                 }
                 else
                 {

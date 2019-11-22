@@ -12,9 +12,11 @@ namespace Web_Dev_Bootcamp
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string loginid = Request.QueryString["loginid"];
+            addStudentButton.HRef += "?loginid=" + loginid;
+
             var db = new SCHOOLDB();
             List<Dictionary<String, String>> rs = db.List_Query("select * from students");
-
 
             students_result.InnerHtml = "";
             foreach (Dictionary<String, String> row in rs)
@@ -53,7 +55,7 @@ namespace Web_Dev_Bootcamp
 
                 students_result.InnerHtml += "<td>" + monthOfYear + "-" + dayOfMonth + "-" + enrolmentdate.Year + "</td>";
 
-                students_result.InnerHtml += "<td class='action-items'><a href='Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student' onclick='return confirm(\"Are you sure you want to delete student ["+studentnumber+" - "+studentfirstname+" "+studentlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
+                students_result.InnerHtml += "<td class='action-items'><a href='Student.aspx?studentid=" + studentid + "&loginid="+loginid+"' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student' onclick='return confirm(\"Are you sure you want to delete student ["+studentnumber+" - "+studentfirstname+" "+studentlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
 
                 students_result.InnerHtml += "</td></tr>";
             }

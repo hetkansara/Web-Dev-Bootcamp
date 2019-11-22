@@ -14,12 +14,13 @@ namespace Web_Dev_Bootcamp
         protected void Page_Load(object sender, EventArgs e)
         {
             string studentid = Request.QueryString["studentid"];
-            
+
+            backButton.HRef += "?loginid="+Request.QueryString["loginid"];
             //We will attempt to get the record we need
             if (!String.IsNullOrEmpty(studentid))
             {
                 var db = new SCHOOLDB();
-                Dictionary<String, String> student_record = db.FindStudent(Int32.Parse(studentid));
+                Dictionary<String, String> student_record = db.FindInTable(Int32.Parse(studentid), "STUDENTS");
 
                 if (student_record.Count > 0)
                 {
