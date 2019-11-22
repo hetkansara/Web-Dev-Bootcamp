@@ -30,6 +30,9 @@
    ### List Page
    ![List Page](https://i.ibb.co/sVv4zfw/Screenshot-55.png)
 
+   ## Add/Edit Page
+   ![Add/Edit Page](https://i.ibb.co/C7FR6XQ/Screenshot-57.png)
+
 ## Structure of Project(Code Organization) ##
 
 ### Dependencies ###
