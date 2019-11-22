@@ -40,22 +40,22 @@ namespace Web_Dev_Bootcamp {
         protected global::System.Web.UI.WebControls.TextBox facultylname;
         
         /// <summary>
-        /// employeenumber control.
+        /// facultyemployeenumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox employeenumber;
+        protected global::System.Web.UI.WebControls.TextBox facultyemployeenumber;
         
         /// <summary>
-        /// hiredate control.
+        /// facultyhiredate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hiredate;
+        protected global::System.Web.UI.WebControls.TextBox facultyhiredate;
         
         /// <summary>
         /// salary control.

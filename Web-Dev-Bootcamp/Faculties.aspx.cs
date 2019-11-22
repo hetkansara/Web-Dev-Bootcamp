@@ -24,8 +24,8 @@ namespace Web_Dev_Bootcamp
                     pageTypeTitle.InnerHtml = "Edit ";
                     facultyfname.Text = faculty_record["TEACHERTFNAME"];
                     facultylname.Text = faculty_record["TEACHERLNAME"];
-                    employeenumber.Text = faculty_record["EMPLOYEENUMBER"];
-                    hiredate.Text = faculty_record["HIREDATE"];
+                    facultyemployeenumber.Text = faculty_record["EMPLOYEENUMBER"];
+                    facultyhiredate.Text = faculty_record["HIREDATE"];
                     salary.Text = faculty_record["SALARY"];
                 }
                 else

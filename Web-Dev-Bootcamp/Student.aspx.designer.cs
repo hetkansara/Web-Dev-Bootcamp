@@ -49,12 +49,12 @@ namespace Web_Dev_Bootcamp {
         protected global::System.Web.UI.WebControls.TextBox studentlname;
         
         /// <summary>
-        /// enrolmentdate control.
+        /// enrollmentdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox enrolmentdate;
+        protected global::System.Web.UI.WebControls.TextBox enrollmentdate;
     }
 }
