@@ -25,7 +25,7 @@
 
 ## Wireframes ##
    ### Login
-   ![Login Page](https://i.ibb.co/3TKh3H6/Screenshot-53.png)
+   ![Login Page](https://i.ibb.co/Km10Pcp/Screenshot-58.png)
 
    ### List Page
    ![List Page](https://i.ibb.co/sVv4zfw/Screenshot-55.png)
@@ -36,8 +36,8 @@
 ## Structure of Project(Code Organization) ##
 
 ### Dependencies ###
-    * Visual Studio 
-    * MySQL Server
+   * Visual Studio 
+   * MySQL Server
 
 ### Frontend ###
 `Login.aspx` is the landing page of the web application. `Student.aspx` is the home page containing all the listing pages. It will render the list by using the variable(`listType`) passed in the url. Another variable(`loginid`) is also passed in all the pages. If that variable is not present in the url, website will show the error page.
