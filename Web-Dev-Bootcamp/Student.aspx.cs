@@ -15,7 +15,7 @@ namespace Web_Dev_Bootcamp
         {
             string studentid = Request.QueryString["studentid"];
 
-            backButton.HRef += "?loginid="+Request.QueryString["loginid"];
+            backButton.HRef += "?listType=students&loginid=" + Request.QueryString["loginid"];
             //We will attempt to get the record we need
             if (!String.IsNullOrEmpty(studentid))
             {

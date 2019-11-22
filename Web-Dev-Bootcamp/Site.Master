@@ -56,10 +56,9 @@
                 </div>
                 <div class="navbar-collapse collapse" id="loginContainer" runat="server">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Students.aspx" id="studentLink">Students</a></li>
-                        <li><a runat="server" href="~/Faculties.aspx" id="facultyLink">Faculties</a></li>
-                        <li><a runat="server" href="~/Courses.aspx" id="courseLink">Courses</a></li>
-                       
+                        <li><a runat="server" href="~/Students?listType=students" id="studentLink">Students</a></li>
+                        <li><a runat="server" href="~/Students?listType=teachers" id="facultyLink">Faculties</a></li>
+                        <li><a runat="server" href="~/Students?listType=classes" id="courseLink">Courses</a></li>
                     </ul>
                     <ul class="nav navbar-nav user-container">
                         <li><a runat="server" href="~/Login" id="userName"></a></li>

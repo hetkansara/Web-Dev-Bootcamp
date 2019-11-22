@@ -47,19 +47,19 @@
                         <section class="login-section">
                             <h3>Login</h3>
                             <div class="input-item">
-                                <label>Username:</label>
+                                <asp:Label runat="server" AssociatedControlID="user_name" Text="Username:"></asp:Label>
                                 <asp:TextBox ID="user_name" runat="server" ></asp:TextBox>
                                 <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please enter username" ControlToValidate="user_name"></asp:RequiredFieldValidator>
                             </div>
                             <div class="input-item">
-                                <label>Password:</label>
+                                <asp:Label runat="server" AssociatedControlID="user_password" Text="Password:"></asp:Label>
                                 <asp:TextBox ID="user_password" runat="server" TextMode="Password"></asp:TextBox>
                                 <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please enter password" ControlToValidate="user_password"></asp:RequiredFieldValidator>
                             </div>
                             <div class="input-item">
                                 <input type="submit" value="Login" name="" id="">
                             </div>
-                            <a href="Students.aspx?loginid=Dhanpreet">Login Dhanpreet</a>
+<%--                           <a href="Students.aspx?loginid=Dhanpreet">Login Dhanpreet</a>--%>
                             <a href="#">Forgot Password?</a>
                         </section>
                     </div>

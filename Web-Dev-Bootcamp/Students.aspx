@@ -2,7 +2,7 @@
 
     <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-        <h1>STUDENTS</h1>
+        <h1 runat="server" id="page_title"></h1>
         <!-- <h2>List of all registered Students.</h2> -->
         <div class="form-row">
             <div class="col-md-10">
@@ -12,21 +12,24 @@
                 <input type="submit" class="btn btn-primary" runat="server" value="Search" />
             </div>
         </div>
+        <div runat="server" id="NoResultMsg">
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Student Number</th>
-                    <th scope="col">Enrollment Date</th>
-                    <th scope="col">Actions</th>
+                    <th scope="col" id="Col1" runat="server"></th>
+                    <th scope="col" id="Col2" runat="server"></th>
+                    <th scope="col" id="Col3" runat="server"></th>
+                    <th scope="col" id="Col4" runat="server"></th>
+                    <th scope="col" id="Col5" runat="server">Actions</th>
                 </tr>
             </thead>
             <tbody id="students_result" runat="server">
             </tbody>
-            <a href="Student.aspx" runat="server" id="addStudentButton" class="add-btn" title="Add Student">
+            <a href="#" runat="server" id="addButton" class="add-btn">
                 <i class="fas fa-plus"></i>
             </a>
         </table>
+
+        </div>
     </asp:Content>

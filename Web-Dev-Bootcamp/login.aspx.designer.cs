@@ -24,13 +24,13 @@ namespace Web_Dev_Bootcamp
         protected global::System.Web.UI.HtmlControls.HtmlForm loginform;
 
         /// <summary>
-        /// user_email control.
+        /// user_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox user_email;
+        protected global::System.Web.UI.WebControls.TextBox user_name;
 
         /// <summary>
         /// user_password control.

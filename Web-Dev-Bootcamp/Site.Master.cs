@@ -19,9 +19,9 @@ namespace Web_Dev_Bootcamp
             if (Login_Session == true)
             {
                 userName.InnerHtml = loginid + ", Logout?";
-                studentLink.HRef += "?loginid="+loginid;
-                courseLink.HRef += "?loginid="+loginid;
-                facultyLink.HRef += "?loginid="+loginid;
+                studentLink.HRef += "&loginid="+loginid;
+                courseLink.HRef += "&loginid="+loginid;
+                facultyLink.HRef += "&loginid="+loginid;
             }
             else
             {

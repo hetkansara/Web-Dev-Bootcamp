@@ -1,11 +1,11 @@
-﻿<%@ Page Title="Faculties" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Faculties.aspx.cs" Inherits="Web_Dev_Bootcamp.Faculties" %>
+﻿<%@ Page Title="Faculties" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Faculty.aspx.cs" Inherits="Web_Dev_Bootcamp.Faculties" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
       <div class="container">
             <div class="form-row">
                 <div class="col-md-12">
                     <h2>
-                        <a href="Faculties.aspx" class="back-btn" title="Back" id="backButton" runat="server"><i class="fas fa-arrow-left"></i></a>
+                        <a href="Students.aspx" class="back-btn" title="Back" id="backButton" runat="server"><i class="fas fa-arrow-left"></i></a>
                         <span runat="server" id="pageTypeTitle"></span> Faculty</h2>
                 </div>
             </div>
