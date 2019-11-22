@@ -13,6 +13,15 @@ namespace Web_Dev_Bootcamp {
     public partial class Courses {
         
         /// <summary>
+        /// backButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor backButton;
+        
+        /// <summary>
         /// pageTypeTitle control.
         /// </summary>
         /// <remarks>

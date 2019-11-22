@@ -12,6 +12,7 @@ namespace Web_Dev_Bootcamp
         protected void Page_Load(object sender, EventArgs e)
         {
             string classid = Request.QueryString["classid"];
+            backButton.HRef += "?loginid=" + Request.QueryString["loginid"];
 
             //We will attempt to get the record we need
             if (!String.IsNullOrEmpty(classid))
