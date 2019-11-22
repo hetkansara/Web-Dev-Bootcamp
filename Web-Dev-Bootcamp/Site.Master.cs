@@ -22,6 +22,7 @@ namespace Web_Dev_Bootcamp
                 studentLink.HRef += "&loginid="+loginid;
                 courseLink.HRef += "&loginid="+loginid;
                 facultyLink.HRef += "&loginid="+loginid;
+                homeLink.HRef += "&loginid="+loginid;
             }
             else
             {

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Students Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Students.aspx.cs" Inherits="Web_Dev_Bootcamp._Students" %>
+﻿<%@ Page Title="Students Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListView.aspx.cs" Inherits="Web_Dev_Bootcamp._ListView" %>
 
     <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -24,7 +24,7 @@
                     <th scope="col" id="Col5" runat="server">Actions</th>
                 </tr>
             </thead>
-            <tbody id="students_result" runat="server">
+            <tbody id="list_view_result" runat="server">
             </tbody>
             <a href="#" runat="server" id="addButton" class="add-btn">
                 <i class="fas fa-plus"></i>

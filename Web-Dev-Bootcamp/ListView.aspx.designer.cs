@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web_Dev_Bootcamp
-{
-
-
-    public partial class _Students
-    {
-
+namespace Web_Dev_Bootcamp {
+    
+    
+    public partial class _ListView {
+        
         /// <summary>
         /// page_title control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl page_title;
-
+        
         /// <summary>
         /// searchText control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox searchText;
-
+        
         /// <summary>
         /// NoResultMsg control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl NoResultMsg;
-
+        
         /// <summary>
         /// Col1 control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell Col1;
-
+        
         /// <summary>
         /// Col2 control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell Col2;
-
+        
         /// <summary>
         /// Col3 control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell Col3;
-
+        
         /// <summary>
         /// Col4 control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell Col4;
-
+        
         /// <summary>
         /// Col5 control.
         /// </summary>
@@ -85,16 +83,16 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell Col5;
-
+        
         /// <summary>
-        /// students_result control.
+        /// list_view_result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl students_result;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl list_view_result;
+        
         /// <summary>
         /// addButton control.
         /// </summary>

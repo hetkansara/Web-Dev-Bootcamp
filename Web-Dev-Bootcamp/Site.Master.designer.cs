@@ -7,13 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Web_Dev_Bootcamp
-{
-
-
-    public partial class SiteMaster
-    {
-
+namespace Web_Dev_Bootcamp {
+    
+    
+    public partial class SiteMaster {
+        
+        /// <summary>
+        /// homeLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor homeLink;
+        
         /// <summary>
         /// loginContainer control.
         /// </summary>
@@ -22,7 +29,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginContainer;
-
+        
         /// <summary>
         /// studentLink control.
         /// </summary>
@@ -31,7 +38,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor studentLink;
-
+        
         /// <summary>
         /// facultyLink control.
         /// </summary>
@@ -40,7 +47,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor facultyLink;
-
+        
         /// <summary>
         /// courseLink control.
         /// </summary>
@@ -49,7 +56,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor courseLink;
-
+        
         /// <summary>
         /// userName control.
         /// </summary>
@@ -58,7 +65,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor userName;
-
+        
         /// <summary>
         /// MainContent control.
         /// </summary>
@@ -67,7 +74,7 @@ namespace Web_Dev_Bootcamp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
-
+        
         /// <summary>
         /// errorContainer control.
         /// </summary>

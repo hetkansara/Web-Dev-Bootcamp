@@ -52,13 +52,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/Students">Web Dev Bootcamp</a>
+                    <a class="navbar-brand" runat="server" href="~/ListView?listType=students" id="homeLink">Web Dev Bootcamp</a>
                 </div>
                 <div class="navbar-collapse collapse" id="loginContainer" runat="server">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Students?listType=students" id="studentLink">Students</a></li>
-                        <li><a runat="server" href="~/Students?listType=teachers" id="facultyLink">Faculties</a></li>
-                        <li><a runat="server" href="~/Students?listType=classes" id="courseLink">Courses</a></li>
+                        <li><a runat="server" href="~/ListView?listType=students" id="studentLink">Students</a></li>
+                        <li><a runat="server" href="~/ListView?listType=teachers" id="facultyLink">Faculties</a></li>
+                        <li><a runat="server" href="~/ListView?listType=classes" id="courseLink">Courses</a></li>
                     </ul>
                     <ul class="nav navbar-nav user-container">
                         <li><a runat="server" href="~/Login" id="userName"></a></li>

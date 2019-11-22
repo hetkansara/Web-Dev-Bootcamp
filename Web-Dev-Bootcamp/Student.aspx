@@ -6,7 +6,7 @@
             <div class="form-row">
                 <div class="col-md-12">
                     <h2>
-                        <a href="Students.aspx" id="backButton" runat="server" class="back-btn" title="Back"><i class="fas fa-arrow-left"></i></a>
+                        <a href="ListView.aspx" id="backButton" runat="server" class="back-btn" title="Back"><i class="fas fa-arrow-left"></i></a>
                         <span runat="server" id="pageTypeTitle"></span> Student</h2>
                 </div>
             </div>

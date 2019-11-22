@@ -5,7 +5,7 @@
             <div class="form-row">
                 <div class="col-md-12">
                     <h2>
-                        <a href="Students.aspx" class="back-btn" title="Back" id="backButton" runat="server"><i class="fas fa-arrow-left"></i></a>
+                        <a href="ListView.aspx" class="back-btn" title="Back" id="backButton" runat="server"><i class="fas fa-arrow-left"></i></a>
                         <span runat="server" id="pageTypeTitle"></span> Faculty</h2>
                 </div>
             </div>

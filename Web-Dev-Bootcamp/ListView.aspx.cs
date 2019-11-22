@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Web_Dev_Bootcamp
 {
-    public partial class _Students : Page
+    public partial class _ListView : Page
     {  
 
         protected void Page_Load(object sender, EventArgs e)
@@ -15,8 +15,8 @@ namespace Web_Dev_Bootcamp
             string loginid = Request.QueryString["loginid"];
 
             //------------------------------------
-                //Clearing div with ID "students_result".
-                students_result.InnerHtml = "";
+                //Clearing div with ID "list_view_result".
+                list_view_result.InnerHtml = "";
 
                 //Setting up string to hold list type to be printed
                 string ListType = Request.QueryString["listType"];
@@ -68,24 +68,24 @@ namespace Web_Dev_Bootcamp
                     foreach (Dictionary<String, String> row in rs)
                     {
                         string studentid = row["STUDENTID"];
-                        students_result.InnerHtml += "<tr><th scope=\"row\">" + studentid + "</th>";
+                        list_view_result.InnerHtml += "<tr><th scope=\"row\">" + studentid + "</th>";
 
                         string studentfirstname = row["STUDENTFNAME"];
-                        students_result.InnerHtml += "<td>" + studentfirstname + "</td>";
+                        list_view_result.InnerHtml += "<td>" + studentfirstname + "</td>";
 
                         string studentlastname = row["STUDENTLNAME"];
-                        students_result.InnerHtml += "<td>" + studentlastname + "</td>";
+                        list_view_result.InnerHtml += "<td>" + studentlastname + "</td>";
 
                         string studentnumber = row["STUDENTNUMBER"];
-                        students_result.InnerHtml += "<td>" + studentnumber + "</td>";
+                        list_view_result.InnerHtml += "<td>" + studentnumber + "</td>";
 
                         string enrolmentdate = row["ENROLMENTDATE"];
-                        students_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
+                        list_view_result.InnerHtml += "<td>" + enrolmentdate + "</td>";
 
-//                        students_result.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
-                        students_result.InnerHtml += "<td class='action-items'><a href='Student.aspx?studentid=" + studentid + "&loginid="+loginid+"' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student' onclick='return confirm(\"Are you sure you want to delete student ["+studentnumber+" - "+studentfirstname+" "+studentlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
+//                        list_view_result.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + studentid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
+                        list_view_result.InnerHtml += "<td class='action-items'><a href='Student.aspx?studentid=" + studentid + "&loginid="+loginid+"' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student' onclick='return confirm(\"Are you sure you want to delete student ["+studentnumber+" - "+studentfirstname+" "+studentlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
 
-                        students_result.InnerHtml += "</td></tr>";
+                        list_view_result.InnerHtml += "</td></tr>";
                     }
                 }
 
@@ -101,25 +101,25 @@ namespace Web_Dev_Bootcamp
                     foreach (Dictionary<String, String> row in rs)
                     {
                         string teacherid = row["TEACHERID"];
-                        students_result.InnerHtml += "<tr><th scope=\"row\">" + teacherid + "</th>";
+                        list_view_result.InnerHtml += "<tr><th scope=\"row\">" + teacherid + "</th>";
 
                         string teacherfirstname = row["TEACHERFNAME"];
-                        students_result.InnerHtml += "<td>" + teacherfirstname + "</td>";
+                        list_view_result.InnerHtml += "<td>" + teacherfirstname + "</td>";
 
                         string teacherlastname = row["TEACHERLNAME"];
-                        students_result.InnerHtml += "<td>" + teacherlastname + "</td>";
+                        list_view_result.InnerHtml += "<td>" + teacherlastname + "</td>";
 
                         string employeenumber = row["EMPLOYEENUMBER"];
-                        students_result.InnerHtml += "<td>" + employeenumber + "</td>";
+                        list_view_result.InnerHtml += "<td>" + employeenumber + "</td>";
 
                         string hiredate = row["HIREDATE"];
-                        students_result.InnerHtml += "<td>" + hiredate + "</td>";
+                        list_view_result.InnerHtml += "<td>" + hiredate + "</td>";
 
 //                        studentsResult.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + teacherid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
-                        students_result.InnerHtml += "<td>" + employeenumber + "</td>";
-                        students_result.InnerHtml += "<td class='action-items'><a href='Faculty.aspx?teacherid=" + teacherid + "&loginid="+loginid+"' title ='Edit Faculty'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Faculty' onclick='return confirm(\"Are you sure you want to delete faculty ["+employeenumber+" - "+teacherfirstname+" "+teacherlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
+                        list_view_result.InnerHtml += "<td>" + employeenumber + "</td>";
+                        list_view_result.InnerHtml += "<td class='action-items'><a href='Faculty.aspx?teacherid=" + teacherid + "&loginid="+loginid+"' title ='Edit Faculty'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Faculty' onclick='return confirm(\"Are you sure you want to delete faculty ["+employeenumber+" - "+teacherfirstname+" "+teacherlastname+"]?\")'><i class='fas fa-trash'></i></a></td>";
 
-                        students_result.InnerHtml += "</td></tr>";
+                        list_view_result.InnerHtml += "</td></tr>";
                     }
 
                 }
@@ -136,24 +136,24 @@ namespace Web_Dev_Bootcamp
                     foreach (Dictionary<String, String> row in rs)
                     {
                         string classid = row["CLASSID"];
-                        students_result.InnerHtml += "<tr><th scope=\"row\">" + classid + "</th>";
+                        list_view_result.InnerHtml += "<tr><th scope=\"row\">" + classid + "</th>";
 
                         string classcode = row["CLASSCODE"];
-                        students_result.InnerHtml += "<td>" + classcode + "</td>";
+                        list_view_result.InnerHtml += "<td>" + classcode + "</td>";
 
                         string classname = row["CLASSNAME"];
-                        students_result.InnerHtml += "<td>" + classname + "</td>";
+                        list_view_result.InnerHtml += "<td>" + classname + "</td>";
 
                         string startdate = row["STARTDATE"];
-                        students_result.InnerHtml += "<td>" + startdate + "</td>";
+                        list_view_result.InnerHtml += "<td>" + startdate + "</td>";
 
                         string finishdate = row["FINISHDATE"];
-                        students_result.InnerHtml += "<td>" + finishdate + "</td>";
+                        list_view_result.InnerHtml += "<td>" + finishdate + "</td>";
 
-//                        students_result.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + classid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
-                        students_result.InnerHtml += "<td class='action-items'><a href='Course.aspx?classid=" + classid + "&loginid="+loginid+"' title ='Edit Course'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Course' onclick='return confirm(\"Are you sure you want to delete course ["+classcode+ " - "+classname+"]?\")'><i class='fas fa-trash'></i></a></td>";
+//                        list_view_result.InnerHtml += "<td class='action-items'><a href='Edit_Student.aspx?studentid=" + classid + "' title ='Edit Student'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Student'><i class='fas fa-trash'></i></a></td>";
+                        list_view_result.InnerHtml += "<td class='action-items'><a href='Course.aspx?classid=" + classid + "&loginid="+loginid+"' title ='Edit Course'><i class='fas fa-edit'></i></a>  <a href='#' title='Delete Course' onclick='return confirm(\"Are you sure you want to delete course ["+classcode+ " - "+classname+"]?\")'><i class='fas fa-trash'></i></a></td>";
 
-                        students_result.InnerHtml += "</td></tr>";
+                        list_view_result.InnerHtml += "</td></tr>";
                     }
                 }
 

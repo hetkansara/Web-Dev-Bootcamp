@@ -27,7 +27,7 @@ namespace Web_Dev_Bootcamp
                     {
                         if (UserName == "Admin" && UserPassword == "Admin")
                         {
-                            Response.Redirect("Students.aspx?loginid=dhanpree&listType=students");
+                            Response.Redirect("ListView.aspx?loginid=dhanpree&listType=students");
                         }
                         //else
                         //{

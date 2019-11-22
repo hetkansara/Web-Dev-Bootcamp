@@ -31,7 +31,7 @@
    ![List Page](https://i.ibb.co/sVv4zfw/Screenshot-55.png)
 
    ## Add/Edit Page
-   ![Add/Edit Page](https://i.ibb.co/C7FR6XQ/Screenshot-57.png)
+   ![Add/Edit Page](https://i.ibb.co/3YmnnqW/Screenshot-59.png)
 
 ## Structure of Project(Code Organization) ##
 
@@ -40,7 +40,7 @@
    * MySQL Server
 
 ### Frontend ###
-`Login.aspx` is the landing page of the web application. `Student.aspx` is the home page containing all the listing pages. It will render the list by using the variable(`listType`) passed in the url. Another variable(`loginid`) is also passed in all the pages. If that variable is not present in the url, website will show the error page.
+`Login.aspx` is the landing page of the web application. `ListView.aspx` is the home page containing all the listing pages. It will render the list by using the variable(`listType`) passed in the url. Another variable(`loginid`) is also passed in all the pages. If that variable is not present in the url, website will show the error page.
 
 All CSS files are at `Content/` folder and all Scripts are located in `Content/Scripts` folder.
 

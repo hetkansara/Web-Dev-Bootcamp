@@ -140,7 +140,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Student.aspx" />
-    <Content Include="Students.aspx" />
+    <Content Include="ListView.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -216,12 +216,12 @@
     <Compile Include="Student.aspx.designer.cs">
       <DependentUpon>Student.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Students.aspx.cs">
-      <DependentUpon>Students.aspx</DependentUpon>
+    <Compile Include="ListView.aspx.cs">
+      <DependentUpon>ListView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Students.aspx.designer.cs">
-      <DependentUpon>Students.aspx</DependentUpon>
+    <Compile Include="ListView.aspx.designer.cs">
+      <DependentUpon>ListView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
