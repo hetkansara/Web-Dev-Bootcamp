@@ -24,7 +24,11 @@
     > `Password`: Admin  
 
 ## Wireframes ##
-    Wireframes are on the way!... :)
+   ### Login
+   ![Login Page](https://i.ibb.co/3TKh3H6/Screenshot-53.png)
+
+   ### List Page
+   ![List Page](https://i.ibb.co/sVv4zfw/Screenshot-55.png)
 
 ## Structure of Project(Code Organization) ##
 
