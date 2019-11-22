@@ -102,3 +102,6 @@ footer p {
 td{
     color: #616161;
 }
+.user-container{
+    float: right;
+}
