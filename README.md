@@ -69,3 +69,10 @@ We have a `School` database in the backend. The structure of the database is as 
 | ------- | ----------- | ----- | ------- | ------ | -------- |
 | 1 | http5101 | 1 | T378 | 2018-09-04 | Web Application Development |
 | 2 | http5102 | 2 | T381 | 2018-09-04 | Project Management |
+
+## Future Enhancements ##
+   1. Students Registration Form
+   2. Students can add/drop courses
+   3. View Timetable
+   4. Add database connection for adding/updating data
+   5. Add different access levels (Student & Faculty)
