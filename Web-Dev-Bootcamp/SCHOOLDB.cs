@@ -110,7 +110,7 @@ namespace Web_Dev_Bootcamp
         //We will return a dictionary because a student is defined as having keys and values
         //for example:
         // {"STUDENTFNAME":"CHRISTINE", "STUDENTLNAME":"BITTLE", "STUDENTNUMBER":"N0000"}
-        public Dictionary<String, String> FindStudent(int id)
+        public Dictionary<String, String> FindInTable(int id, string table)
         {
             //Utilize the connection string
             MySqlConnection Connect = new MySqlConnection(ConnectionString);
@@ -121,7 +121,15 @@ namespace Web_Dev_Bootcamp
             try
             {
                 //Build a custom query with the id information provided
-                string query = "select * from STUDENTS where studentid = "+id;
+                string field = "";
+                if(table == "TEACHERS") {
+                    field = "teacherid";
+                } else if(table == "CLASSES") {
+                    field = "classid";
+                } else {
+                    field = "studentid";
+                }
+                string query = "select * from "+table+" where "+field+" = "+id;
                 Debug.WriteLine("Connection Initialized...");
                 //open the db connection
                 Connect.Open();

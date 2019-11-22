@@ -25,7 +25,7 @@
             </thead>
             <tbody id="students_result" runat="server">
             </tbody>
-            <a href="Student.aspx" class="add-btn" title="Add Student">
+            <a href="Student.aspx" runat="server" id="addStudentButton" class="add-btn" title="Add Student">
                 <i class="fas fa-plus"></i>
             </a>
         </table>

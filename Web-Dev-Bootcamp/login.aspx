@@ -47,9 +47,9 @@
                         <section class="login-section">
                             <h3>Login</h3>
                             <div class="input-item">
-                                <label>Email:</label>
-                                <asp:TextBox ID="user_email" runat="server" TextMode="Email"></asp:TextBox>
-                                <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please enter email address" ControlToValidate="user_email"></asp:RequiredFieldValidator>
+                                <label>Username:</label>
+                                <asp:TextBox ID="user_name" runat="server" ></asp:TextBox>
+                                <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please enter username" ControlToValidate="user_name"></asp:RequiredFieldValidator>
                             </div>
                             <div class="input-item">
                                 <label>Password:</label>
@@ -59,7 +59,7 @@
                             <div class="input-item">
                                 <input type="submit" value="Login" name="" id="">
                             </div>
-                            <a href="Student.aspx?loginid=Dhanpreet">Login Dhanpreet</a>
+                            <a href="Students.aspx?loginid=Dhanpreet">Login Dhanpreet</a>
                             <a href="#">Forgot Password?</a>
                         </section>
                     </div>
