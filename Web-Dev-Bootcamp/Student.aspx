@@ -12,33 +12,37 @@
             </div>
             <div class="form-row">
                 <div class="col-md-4 mb-3">
-                    <label for="student_id">Studnet ID</label>
-                    <input type="text" class="form-control" id="student_id" runat="server" aria-describedby="studentID" placeholder="Enter studentid">
-                    <small id="studentID" class="form-text text-muted">Enter student's id</small>
+                    <label for="studentnumber">Studnet Number</label>
+                    <asp:TextBox runat="server" ID="studentnumber" aria-describedby="studentNumber" placeholder="Enter student number"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="studentnumber"></asp:RequiredFieldValidator>
+                    <small id="studentNumberInfo" class="form-text text-muted">Enter student number</small>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="student_fname">First Name</label>
-                    <input type="text" class="form-control" id="student_fname" runat="server" aria-describedby="studentFname" placeholder="Enter firstname">
-                    <small id="studentFname" class="form-text text-muted">Enter student's firstname</small>
+                    <label for="studentfname">First Name</label>
+                    <asp:TextBox runat="server" ID="studentfname" aria-describedby="studentFname" placeholder="Enter firstname"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="studentfname"></asp:RequiredFieldValidator>
+                     <small id="studentFnameInfo" class="form-text text-muted">Enter student's firstname</small>
+                  
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="student_lname">Last Name</label>
-                    <input type="text" class="form-control" id="student_lname" runat="server" aria-describedby="studentLname" placeholder="Enter lastname">
-                    <small id="studentLname" class="form-text text-muted">Enter student's lastname</small>
+                    <label for="studentlname">Last Name</label>
+                    <asp:TextBox runat="server" ID="studentlname" aria-describedby="studentLname" placeholder="Enter lastname"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="studentlname"></asp:RequiredFieldValidator>
+                    <small id="studentLnameInfo" class="form-text text-muted">Enter student's lastname</small>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-md-12">
-                    <label for="enrolment_date">Enrollment Date</label>
-                    <input type="text" class="form-control" id="enrolment_date" runat="server" aria-describedby="enrollmentDate" placeholder="Enter enrollment date">
-                    <small id="enrollmentDate" class="form-text text-muted">Select enrollment date</small>
+                    <label for="enrolmentdate">Enrollment Date</label>
+                    <asp:TextBox runat="server" ID="enrolmentdate" aria-describedby="enrollmentDate" placeholder="Enter enrollment date"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="enrolmentdate"></asp:RequiredFieldValidator>
+                    <small id="enrollmentDateInfo" class="form-text text-muted">Select enrollment date</small>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col-md-12">
-                    <input type="submit" class="btn btn-primary" runat="server" value="Submit" />
+                    <asp:Button runat="server" Text="Submit" class="btn btn-primary"/>
                 </div>
             </div>
-        </div>
         </div>
     </asp:Content>

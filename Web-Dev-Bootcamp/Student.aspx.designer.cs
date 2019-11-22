@@ -22,39 +22,39 @@ namespace Web_Dev_Bootcamp {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pageTypeTitle;
         
         /// <summary>
-        /// student_fname control.
+        /// studentnumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText student_fname;
+        protected global::System.Web.UI.WebControls.TextBox studentnumber;
         
         /// <summary>
-        /// student_lname control.
+        /// studentfname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText student_lname;
+        protected global::System.Web.UI.WebControls.TextBox studentfname;
         
         /// <summary>
-        /// student_id control.
+        /// studentlname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText student_id;
+        protected global::System.Web.UI.WebControls.TextBox studentlname;
         
         /// <summary>
-        /// enrolment_date control.
+        /// enrolmentdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText enrolment_date;
+        protected global::System.Web.UI.WebControls.TextBox enrolmentdate;
     }
 }

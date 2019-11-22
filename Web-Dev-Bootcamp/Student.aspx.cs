@@ -24,10 +24,10 @@ namespace Web_Dev_Bootcamp
                 if (student_record.Count > 0)
                 {
                     pageTypeTitle.InnerHtml = "Edit ";
-                    student_fname.Value = student_record["STUDENTFNAME"];
-                    student_lname.Value = student_record["STUDENTLNAME"];
-                    student_id.Value = student_record["STUDENTNUMBER"];
-                    enrolment_date.Value = student_record["ENROLMENTDATE"];
+                    studentfname.Text = student_record["STUDENTFNAME"];
+                    studentlname.Text = student_record["STUDENTLNAME"];
+                    studentnumber.Text = student_record["STUDENTNUMBER"];
+                    enrolmentdate.Text = student_record["ENROLMENTDATE"];
                 }
                 else
                 {
