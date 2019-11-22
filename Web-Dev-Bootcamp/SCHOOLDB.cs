@@ -115,15 +115,17 @@ namespace Web_Dev_Bootcamp
             try
             {
                 //Build a custom query with the id information provided
-                string field = "";
-                if(table == "TEACHERS") {
-                    field = "teacherid";
+                string query = "";
+                if (table == "TEACHERS") {
+                    query = "SELECT TEACHERID, TEACHERFNAME, TEACHERLNAME, EMPLOYEENUMBER, DATE_FORMAT(HIREDATE,'%Y-%m-%d') AS HIREDATE, SALARY FROM teachers WHERE TEACHERID = " + id;
                 } else if(table == "CLASSES") {
-                    field = "classid";
+                    query = "SELECT CLASSID, CLASSCODE, TEACHERID, DATE_FORMAT(STARTDATE,'%Y-%m-%d') AS STARTDATE, DATE_FORMAT(FINISHDATE,'%Y-%m-%d') AS FINISHDATE, CLASSNAME FROM classes WHERE CLASSID = " + id;
                 } else {
-                    field = "studentid";
+                    query = "SELECT STUDENTID, STUDENTFNAME, STUDENTLNAME, STUDENTNUMBER,  DATE_FORMAT(ENROLMENTDATE,'%Y-%m-%d') AS ENROLMENTDATE FROM students WHERE STUDENTID = " + id;
                 }
-                string query = "select * from "+table+" where "+field+" = "+id;
+
+                Console.WriteLine(query);
+
                 Debug.WriteLine("Connection Initialized...");
                 //open the db connection
                 Connect.Open();
