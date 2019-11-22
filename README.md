@@ -1,6 +1,6 @@
 # Web-Dev-Bootcamp - Web Application Development #
 
-**Web-Dev-Bootcamp** is an application build with visual studio code. It's a CRUD Application of Students, Teachers & Classes.
+**Web-Dev-Bootcamp** is an application build with visual studio. It's a CRUD Application of Students, Teachers & Classes.
 
 ## Team Members Information ##
 
