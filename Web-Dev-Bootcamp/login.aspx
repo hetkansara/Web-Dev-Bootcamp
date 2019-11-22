@@ -59,7 +59,7 @@
                             <div class="input-item">
                                 <input type="submit" value="Login" name="" id="">
                             </div>
-                            <a href="Welcome_page.aspx?login_id=dhanpree">Login Dhanpreet</a>
+                            <a href="Student.aspx?loginid=Dhanpreet">Login Dhanpreet</a>
                             <a href="#">Forgot Password?</a>
                         </section>
                     </div>

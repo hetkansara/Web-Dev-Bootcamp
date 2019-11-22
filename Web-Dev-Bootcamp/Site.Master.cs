@@ -11,7 +11,26 @@ namespace Web_Dev_Bootcamp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string loginid = Request.QueryString["loginid"];
+            bool Login_Session = true;
 
+            if (string.IsNullOrEmpty(loginid)) Login_Session = false;
+
+            if (Login_Session == true)
+            {
+                userName.InnerHtml = loginid + ", Logout?";
+                studentLink.HRef += "?loginid=Dhanpreet";
+                courseLink.HRef += "?loginid=Dhanpreet";
+                facultyLink.HRef += "?loginid=Dhanpreet";
+            }
+            else
+            {
+                loginContainer.InnerHtml = "";
+                MainContent.Visible = false;
+
+                errorContainer.InnerHtml = "<h1>Error With this page...!</h1>";
+                errorContainer.InnerHtml += "<h2><a href='login.aspx'>Back to Login Page</a></h2>";
+            }
         }
     }
 }
